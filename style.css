@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f2f2f2;
 }
 
 .clock {
@@ -13,8 +14,49 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .time {
-    font-size: 36px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.alarms {
+    margin-top: 20px;
+}
+
+.alarms h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.alarms ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alarms li {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
