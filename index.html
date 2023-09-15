@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloj Digital Interactivo</title>
+    <title>RelojCraft</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="clock">
-        <div class="time" id="time">00:00:00</div>
+        <div class="time" id="time">00:00:00 AM</div>
+        <div class="date" id="date">Fecha: dd/mm/aaaa</div>
+        <div class="controls">
+            <label for="alarm-name">Nombre de la Alarma:</label>
+            <input type="text" id="alarm-name">
+            <label for="alarm-time">Hora de la Alarma:</label>
+            <input type="time" id="alarm-time" step="1">
+            <select id="alarm-ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <button class="button" id="set-alarm">Configurar Alarma</button>
+        </div>
+        <div class="alarms">
+            <h2>Alarmas Programadas</h2>
+            <ul id="alarm-list"></ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
